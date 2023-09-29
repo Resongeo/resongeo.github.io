@@ -6,7 +6,7 @@
   let age = currentDate.getMonth() < 10 ? currentDate.getFullYear() - 2004 : currentDate.getFullYear() - 2003
 </script>
 
-<header class="flex flex-col h-screen relative overflow-hidden">
+<header class="flex flex-col min-h-screen relative overflow-hidden">
   <div class="flex flex-row justify-between px-7 py-3 md:px-12 md:py-6 xl:px-16 xl:py-8">
     <h1 class="font-semibold my-auto xl:text-lg">Somogyvári Benedek</h1>
     <span class="material-symbols-outlined p-2 md:hidden">
@@ -32,10 +32,10 @@
       </h1>
   
       <p class="mt-6 text-lg font-medium">
-        Passionate Developer with a Love for Learning, Exploring New Technologies, and Crafting Digital Experiences
+        Soulful Developer with a Love for Learning, Exploring New Technologies, and Crafting Digital Experiences
       </p>
   
-      <div class="year-cards">
+      <div class="year-cards mx-2">
         <div>
           <p>{experience}</p>
           <p>years of <br> experience</p>
