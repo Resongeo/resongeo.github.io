@@ -4,12 +4,37 @@
 
   let experience = experienceYear < 10 ? '0' + experienceYear : experienceYear
   let age = currentDate.getMonth() < 10 ? currentDate.getFullYear() - 2004 : currentDate.getFullYear() - 2003
+
+  let fullscreenMenu
+
+  function toggleFullscreenMenu() {
+    if (!fullscreenMenu) {
+      fullscreenMenu = document.querySelector("#fullscreen-menu")
+      toggleFullscreenMenu()
+    }
+
+    fullscreenMenu.style.display = fullscreenMenu.style.display === 'none' ? 'flex' : 'none'
+  }
 </script>
 
 <header class="flex flex-col min-h-screen relative overflow-hidden">
+  <!-- Full Screen Menu -->
+  <div id="fullscreen-menu" class="hidden absolute items-center justify-center w-screen h-screen z-10 bg-black bg-opacity-25 backdrop-blur-md">
+    <span class="material-symbols-outlined absolute top-0 right-0 text-4xl m-6 cursor-pointer" on:click={toggleFullscreenMenu}>
+      close
+    </span>
+
+    <ul class="text-center">
+      <li class="my-10"><a class="text-xl hover:text-zinc-300 transition-colors font-semibold" on:click={toggleFullscreenMenu} href="#about">About me</a></li>
+      <li class="my-10"><a class="text-xl hover:text-zinc-300 transition-colors font-semibold" on:click={toggleFullscreenMenu} href="#skills">Skills</a></li>
+      <li class="my-10"><a class="text-xl hover:text-zinc-300 transition-colors font-semibold" on:click={toggleFullscreenMenu} href="#projects">Projects</a></li>
+      <li class="my-10"><a class="text-xl hover:text-zinc-300 transition-colors font-semibold" on:click={toggleFullscreenMenu} href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
   <div class="flex flex-row justify-between px-7 py-3 md:px-12 md:py-6 xl:px-16 xl:py-8">
     <h1 class="font-semibold my-auto xl:text-lg">Somogyvári Benedek</h1>
-    <span class="material-symbols-outlined p-2 md:hidden">
+    <span class="material-symbols-outlined p-2 md:hidden cursor-pointer hover:text-zinc-300 transition-colors" on:click={toggleFullscreenMenu}>
       menu
     </span>
     <ul class="hidden md:flex flex-row items-center">
@@ -105,7 +130,7 @@ ul {
 
     p {
       &:nth-child(1) {
-        @apply text-5xl font-normal mr-3;
+        @apply text-5xl text-white font-light mr-3;
       }
       
       &:nth-child(2) {
