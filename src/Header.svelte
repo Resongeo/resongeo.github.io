@@ -73,11 +73,11 @@
   
       <div class="more-buttons">
         <button class="bg-gradient-to-r from-primary-200 to-primary-300">
-          Contact me
+          About me
           <span class="material-symbols-outlined">chevron_right</span>
         </button>
         <button class="border-2 border-zinc-800">
-          About me
+          Contact me
           <span class="material-symbols-outlined">chevron_right</span>
         </button>
       </div>
@@ -145,7 +145,7 @@ ul {
   @apply flex justify-between;
 
   button {
-    @apply flex w-[164px] items-center justify-between text-base font-medium py-3 pl-5 pr-3 rounded-lg;
+    @apply flex items-center justify-between text-base font-medium py-3 pl-5 pr-3 rounded-lg shadow-lg;
 
     span {
       margin-left: 0.75rem;
