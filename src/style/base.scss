@@ -1,16 +1,28 @@
 :root {
-    font-family: "Poppins", sans-serif;
-  
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #121212;
-  
-    user-select: none;
+  font-family: "Poppins", sans-serif;
 
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
 
-    -webkit-tap-highlight-color: transparent;
-  }
+  box-sizing: border-box;
+
+  user-select: none;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar{
+  background-color: #121212;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: lighten(#121212, 10%);
+  border-radius: 10px;
+}
