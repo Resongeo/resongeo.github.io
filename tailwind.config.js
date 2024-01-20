@@ -12,6 +12,9 @@ export default {
         'secondary': '#191D1C',
         'title': '#D9D9D9',
         'default-text': '#BCBCBC',
+      },
+      boxShadow: {
+        'glow': '0 0px 10px #000'
       }
     },
   },

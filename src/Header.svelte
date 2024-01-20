@@ -3,7 +3,7 @@
   import SecondaryButton from "./lib/SecondaryButton.svelte"
 
   const currentDate = new Date()
-  const experienceYear = currentDate.getFullYear() - 2021
+  const experienceYear = currentDate.getFullYear() - 2020
 
   let experience = experienceYear < 10 ? '0' + experienceYear : experienceYear
   let age = currentDate.getMonth() < 10 ? currentDate.getFullYear() - 2004 : currentDate.getFullYear() - 2003
@@ -65,7 +65,7 @@
       <div class="year-cards mx-2">
         <div>
           <p>{experience}</p>
-          <p>years of <br> experience</p>
+          <p>years of <br> programming</p>
         </div>
         <div>
           <p>{age}</p>
@@ -84,13 +84,13 @@
 <style lang="scss">
 ul {
   li {
-    @apply ml-6 text-sm xl:text-base font-light tracking-[1px];
+    @apply ml-6 text-sm xl:text-base font-light tracking-[1px] hover:text-primary transition-colors;
   }
 }
 
 .hello-container {
-  @media screen and (min-width: 367px) {
-    width: 367px;
+  @media screen and (min-width: 380px) {
+    width: 380px;
   }
 }
 
