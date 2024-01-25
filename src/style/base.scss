@@ -2,7 +2,7 @@
   font-family: "Poppins", sans-serif;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #121212;
+  @apply bg-default-bg;
 
   box-sizing: border-box;
 

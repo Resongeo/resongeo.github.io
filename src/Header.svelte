@@ -47,7 +47,7 @@
     </ul>
   </div>
 
-  <div class="flex items-center justify-center w-full flex-1 mb-10">
+  <div class="flex items-center justify-center w-full flex-1 mb-10 xl:grid-cols-2 xl:grid xl:place-items-center 2xl:w-[1536px] 2xl:mx-auto">
     <div class="hello-container p-3">
       <div class="flex items-center">
         <div class="w-9 bg-primary h-[1px] mx-4"></div>
@@ -77,6 +77,11 @@
         <PrimaryButton text="About me" target="#about" />
         <SecondaryButton text="Contact me" target="#contact" />
       </div>
+    </div>
+
+    <div class="hidden xl:grid place-items-center">
+      <img class="w-[500px] absolute z-20" src="images/placeholder.png" alt="dude is programming">
+      <div class="radial-glow z-10 w-[900px] h-[900px] absolute"></div>
     </div>
   </div>
 </header>

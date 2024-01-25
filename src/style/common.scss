@@ -2,9 +2,13 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 2;
 
-    @apply flex items-center justify-between text-lg font-medium py-[0.65rem] pl-5 pr-3 rounded-lg transition-colors;
+    @apply flex items-center justify-between text-base sm:text-lg font-medium py-[0.65rem] pl-5 pr-3 rounded-lg transition-colors;
 
     span {
         @apply transition-transform;
     }
+}
+
+.radial-glow {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(61, 171, 171, 0.14) 0%, rgba(61, 171, 138, 0.00) 100%);
 }

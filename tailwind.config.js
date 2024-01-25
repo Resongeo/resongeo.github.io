@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'default-bg': '#181919',
+        'default-bg': '#191C1C',
         'primary': '#3DAB83',
-        'secondary': '#191D1C',
+        'secondary': '#191C1C',
         'title': '#D9D9D9',
         'default-text': '#BCBCBC',
       },
