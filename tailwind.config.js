@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         'default-bg': '#191C1C',
-        'primary': '#3DAB83',
+        'primary': '#3DAB8A',
         'primary-hover': '#359471',
         'secondary': '#222525',
         'secondary-hover': '#303232',

@@ -13,3 +13,17 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(61, 171, 171, 0.14) 0%, rgba(61, 171, 138, 0.00) 100%);
     z-index: -1;
 }
+
+.observable {
+    opacity: 0;
+    transition-property: opacity transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.3s;
+
+    transform: translateY(20%);
+}
+
+.fade-transition {
+    opacity: 1;
+    transform: translateY(0%);
+}

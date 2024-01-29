@@ -18,7 +18,7 @@
 }
 
 ::-webkit-scrollbar{
-  background-color: #181919;
+  background-color: #191C1C;
   width: 10px;
 }
 
@@ -29,4 +29,8 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }

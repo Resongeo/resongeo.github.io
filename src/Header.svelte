@@ -20,7 +20,7 @@
   }
 </script>
 
-<header class="flex flex-col min-h-screen relative overflow-hidden">
+<header class="flex flex-col min-h-screen relative">
   <div id="fullscreen-menu" class="hidden absolute items-center justify-center w-screen h-screen z-10 bg-black bg-opacity-25 backdrop-blur-md">
     <span class="material-symbols-outlined absolute top-0 right-0 text-4xl m-6 cursor-pointer" on:click={toggleFullscreenMenu}>
       close
