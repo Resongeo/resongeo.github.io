@@ -14,7 +14,7 @@
             <TextCard
                 icon="school"
                 title="How it started"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                content="I went to an IT school to learn programming there. After not long, I started learning on my own. First, I created games then got into web development. After highscool I went to technical training where I learned backend and tools like Docker. Alongside I started my favorite side project, a game engine."/>
         </div>
 
         <div class="mt-14 lg:grid lg:grid-cols-2 lg:h-[300px] lg:place-items-center">
@@ -22,7 +22,7 @@
             <TextCard
                 icon="sports_esports"
                 title="What I like to do"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                content="In my free time, I like to work on personal projects. It's my hobby to learn new skills and technologies. And also I like to go out with friends, play pool, bowling, darts. And of course as a nerd, I play videogames."/>
             <div class="hidden lg:grid place-items-center 2xl:ml-12">
                 <img class="observable w-[300px] absolute z-20" src="images/placeholder.png" alt="dude is programming">
                 <div class="observable radial-glow z-10 w-[500px] h-[500px] absolute"></div>

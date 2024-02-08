@@ -9,11 +9,11 @@
       <span class="material-symbols-outlined text-primary text-5xl">
         {icon}
       </span>
-      <h1 class="text-3xl font-bold ml-3 tracking-wide text-title">
+      <h1 class="text-3xl font-bold ml-4 tracking-wide text-title">
         {title}
       </h1>
   </div>
-  <p class="mx-2 text-justify text-default-text font-semibold text-lg">
+  <p class="mx-2 text-justify text-default-text text-lg">
       {content}
   </p>
 </div>
