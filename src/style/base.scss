@@ -1,5 +1,5 @@
 :root {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   color: rgba(255, 255, 255, 0.87);
   @apply bg-default-bg;
@@ -17,12 +17,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-::-webkit-scrollbar{
-  background-color: #191C1C;
+::-webkit-scrollbar {
+  background-color: #191c1c;
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: lighten(#121212, 10%);
   border-radius: 10px;
 }

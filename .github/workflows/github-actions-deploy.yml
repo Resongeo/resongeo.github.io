@@ -2,7 +2,7 @@ name: Deploy static site
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
 
   # To run the workflow manually
   workflow_dispatch:
