@@ -11,9 +11,9 @@
       <SkillCard
         title="Web Development"
         icons={[
-          'images/laravel.svg',
-          'images/vuejs.svg',
-          'images/svelte.svg',
+          'laravel.svg',
+          'vuejs.svg',
+          'svelte.svg',
         ]}
       />
     </div>
@@ -22,9 +22,9 @@
       <SkillCard
         title="Languages"
         icons={[
-          'images/cpp.svg',
-          'images/csharp.svg',
-          'images/javascript.svg',
+          'cpp.svg',
+          'csharp.svg',
+          'javascript.svg',
         ]}
       />
     </div>
@@ -33,8 +33,8 @@
       <SkillCard
         title="Tools"
         icons={[
-          'images/docker.svg',
-          'images/git.svg'
+          'docker.svg',
+          'git.svg'
         ]}
       />
     </div>
