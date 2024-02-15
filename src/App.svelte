@@ -3,6 +3,8 @@
   import AboutMe from './pages/AboutMe.svelte'
   import Skills from './pages/Skills.svelte'
   import Projects from './pages/Projects.svelte'
+  import Contact from './pages/Contact.svelte'
+  import Footer from './pages/Footer.svelte'
 </script>
 
 <main>
@@ -10,6 +12,8 @@
   <AboutMe />
   <Skills />
   <Projects />
+  <Contact />
+  <Footer />
 </main>
 
 <style>
