@@ -1,42 +1,28 @@
 <script>
-  import Title from './lib/Title.svelte'
-  import SkillCard from './lib/SkillCard.svelte'
+  import Title from '../lib/Title.svelte'
+  import SkillCard from '../lib/SkillCard.svelte'
 </script>
 
-<section id="skills">
+<section id="skills" class="mb-20 sm:mb-32 lg:mb-40">
   <Title text="SKILLS" />
 
   <div id="skill-cards" class="m-auto md:w-[768px]">
     <div id="skill-card-web">
       <SkillCard
         title="Web Development"
-        icons={[
-          'laravel.svg',
-          'vuejs.svg',
-          'svelte.svg',
-        ]}
+        icons={['laravel.svg', 'vuejs.svg', 'svelte.svg']}
       />
     </div>
 
     <div id="skill-card-lang">
       <SkillCard
         title="Languages"
-        icons={[
-          'cpp.svg',
-          'csharp.svg',
-          'javascript.svg',
-        ]}
+        icons={['cpp.svg', 'csharp.svg', 'javascript.svg']}
       />
     </div>
 
     <div id="skill-card-tool">
-      <SkillCard
-        title="Tools"
-        icons={[
-          'docker.svg',
-          'git.svg'
-        ]}
-      />
+      <SkillCard title="Tools" icons={['docker.svg', 'git.svg']} />
     </div>
   </div>
 </section>

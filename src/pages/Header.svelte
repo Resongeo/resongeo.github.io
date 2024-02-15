@@ -1,6 +1,6 @@
 <script>
-  import PrimaryButton from './lib/PrimaryButton.svelte'
-  import SecondaryButton from './lib/SecondaryButton.svelte'
+  import PrimaryButton from '../lib/PrimaryButton.svelte'
+  import SecondaryButton from '../lib/SecondaryButton.svelte'
 
   const currentDate = new Date()
   const experienceYear = currentDate.getFullYear() - 2020

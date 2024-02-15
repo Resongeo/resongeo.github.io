@@ -1,13 +1,15 @@
 <script>
-  import Header from './Header.svelte'
-  import AboutMe from './AboutMe.svelte'
-  import Skills from './Skills.svelte'
+  import Header from './pages/Header.svelte'
+  import AboutMe from './pages/AboutMe.svelte'
+  import Skills from './pages/Skills.svelte'
+  import Projects from './pages/Projects.svelte'
 </script>
 
 <main>
   <Header />
   <AboutMe />
   <Skills />
+  <Projects />
 </main>
 
 <style>

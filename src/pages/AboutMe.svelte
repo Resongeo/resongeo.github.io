@@ -1,6 +1,6 @@
 <script>
-  import TextCard from './lib/TextCard.svelte'
-  import Title from './lib/Title.svelte'
+  import TextCard from '../lib/TextCard.svelte'
+  import Title from '../lib/Title.svelte'
 </script>
 
 <section id="about" class="mb-20 sm:mb-32 lg:mb-40">
