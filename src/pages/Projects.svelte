@@ -21,6 +21,3 @@
     tags={['C++', 'Interpreter']}
   />
 </section>
-
-<style lang="scss" scoped>
-</style>

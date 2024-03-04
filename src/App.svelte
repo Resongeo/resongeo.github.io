@@ -15,6 +15,3 @@
   <Contact />
   <Footer />
 </main>
-
-<style>
-</style>

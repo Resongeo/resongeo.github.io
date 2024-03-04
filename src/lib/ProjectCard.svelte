@@ -39,6 +39,3 @@
     draggable="false"
   />
 </div>
-
-<style lang="scss" scoped>
-</style>

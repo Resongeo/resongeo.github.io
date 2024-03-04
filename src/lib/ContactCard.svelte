@@ -17,7 +17,7 @@
   <a
     href={url}
     target="_blank"
-    class="py-1 px-2 border border-default-text text-default-text rounded-lg"
+    class="py-1 px-2 border border-default-text text-default-text rounded-lg hover:text-primary-hover hover:border-primary-hover hover:bg-primary hover:bg-opacity-5 transition-colors"
   >
     {link}
   </a>

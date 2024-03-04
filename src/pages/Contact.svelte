@@ -24,6 +24,3 @@
     />
   </div>
 </section>
-
-<style lang="scss" scoped>
-</style>
