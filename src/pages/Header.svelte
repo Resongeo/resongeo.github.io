@@ -1,7 +1,4 @@
 <script>
-  import PrimaryButton from '../lib/PrimaryButton.svelte'
-  import SecondaryButton from '../lib/SecondaryButton.svelte'
-
   const currentDate = new Date()
   const experienceYear = currentDate.getFullYear() - 2020
 
@@ -116,8 +113,19 @@
       </div>
 
       <div class="flex justify-between z-[2]">
-        <PrimaryButton text="About me" target="#about" />
-        <SecondaryButton text="Contact me" target="#contact" />
+        <a class="button group rounded-lg bg-primary hover:bg-primary-hover text-default-bg"
+          href="#about">
+          About me
+          <span class="material-symbols-outlined ml-3 group-hover:translate-x-1"
+            >chevron_right</span
+          >
+        </a>
+        <a href="files/resume_en.pdf" download class="button group bg-secondary hover:bg-secondary-hover">
+          Download CV
+          <span class="material-symbols-outlined ml-3 group-hover:translate-x-1">
+            chevron_right
+          </span>
+        </a>
       </div>
     </div>
 
