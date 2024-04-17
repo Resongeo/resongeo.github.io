@@ -1,18 +1,20 @@
 const options = {
   root: null,
-  rootMargin: '80px',
-  threshold: 1.0,
+  rootMargin: '0px',
+  threshold: 0.0,
 }
 
-let observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('fade-transition')
+      entry.target.classList.add('transition-reset')
       observer.unobserve(entry.target)
     }
   })
 }, options)
 
-document.querySelectorAll('.observable').forEach((element) => {
-  //observer.observe(element)
+Array.from(['.transition-float-up', '.transition-float-left', '.transition-float-right']).forEach((className) => {
+  document.querySelectorAll(className).forEach((element) => {
+    observer.observe(element)
+  })
 })

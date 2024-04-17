@@ -7,9 +7,9 @@
 </script>
 
 <div
-  class="p-4 md:w-[768px] m-auto mb-10 xl:grid xl:grid-cols-2 xl:w-[1024px] 2xl:w-[1280px]"
+  class="transition-float-up p-4 md:w-[768px] m-auto mb-10 xl:grid xl:grid-cols-2 xl:w-[1024px] 2xl:w-[1280px]"
 >
-  <div class="xl:m-auto 2xl:w-[500px]">
+  <div class="xl:m-auto xl:pr-4 2xl:w-[500px]">
     <h1 class="font-semibold text-xl sm:text-2xl text-title">{name}</h1>
 
     <p class="text-default-text my-3 md:text-lg">{description}</p>

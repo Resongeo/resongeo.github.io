@@ -7,7 +7,7 @@
   <Title text="CONTACT" />
 
   <div
-    class="flex flex-col md:flex-row items-center justify-around md:w-[768px] m-auto"
+    class="transition-float-up flex flex-col md:flex-row items-center justify-around md:w-[768px] m-auto"
   >
     <ContactCard
       icon="mail"

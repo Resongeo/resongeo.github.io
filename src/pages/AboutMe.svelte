@@ -10,7 +10,7 @@
     class="mx-auto sm:w-[640px] lg:w-[900px] xl:w-[1000px] 2xl:w-[1200px] lg:grid lg:grid-rows-2"
   >
     <div
-      class="lg:grid lg:grid-cols-2 lg:h-[300px] lg:place-items-center lg:mb-20"
+      class="transition-float-left lg:grid lg:grid-cols-2 lg:h-[300px] lg:place-items-center lg:mb-20"
     >
       <div class="hidden lg:grid place-items-center 2xl:mr-12">
         <img
@@ -30,7 +30,7 @@
     </div>
 
     <div
-      class="mt-14 lg:grid lg:grid-cols-2 lg:h-[300px] lg:place-items-center"
+      class="transition-float-right mt-14 lg:grid lg:grid-cols-2 lg:h-[300px] lg:place-items-center"
     >
       <TextCard
         icon="sports_esports"
