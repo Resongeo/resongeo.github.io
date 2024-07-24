@@ -27,11 +27,8 @@
     class="hidden absolute items-center justify-center w-screen h-screen z-10 bg-black bg-opacity-25 backdrop-blur-md"
   >
     <span
-      class="material-symbols-outlined absolute top-0 right-0 text-4xl m-6 cursor-pointer"
-      on:click={toggleFullscreenMenu}
-    >
-      close
-    </span>
+      class="icon-[material-symbols--close-rounded] text-2xl absolute top-0 right-0 text-4xl m-6 cursor-pointer"
+      on:click={toggleFullscreenMenu} />
 
     <ul class="text-center">
       <li class="my-10">
@@ -69,12 +66,9 @@
     class="flex flex-row justify-between px-7 py-3 md:px-12 md:py-6 xl:px-16 xl:py-8"
   >
     <h1 class="font-semibold my-auto xl:text-lg">Somogyvári Benedek</h1>
-    <span
-      class="material-symbols-outlined p-2 md:hidden cursor-pointer hover:text-zinc-300 transition-colors"
-      on:click={toggleFullscreenMenu}
-    >
-      menu
-    </span>
+
+    <span class="icon-[material-symbols--menu-rounded] p-2 text-2xl md:hidden cursor-pointer hover:text-zinc-300 transition-colors"
+      on:click={toggleFullscreenMenu} />
     <ul class="hidden md:flex flex-row items-center">
       <li><a href="#about">About me</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -116,15 +110,11 @@
         <a class="button group rounded-lg bg-primary hover:bg-primary-hover text-default-bg"
           href="#about">
           About me
-          <span class="material-symbols-outlined ml-3 group-hover:translate-x-1"
-            >chevron_right</span
-          >
+          <span class="icon-[iconamoon--arrow-right-2] text-xl ml-3 group-hover:translate-x-1" />
         </a>
         <a href="files/resume_en.pdf" download class="button group bg-secondary hover:bg-secondary-hover">
           Download CV
-          <span class="material-symbols-outlined ml-3 group-hover:translate-x-1">
-            chevron_right
-          </span>
+          <span class="icon-[iconamoon--arrow-right-2] text-xl ml-3 group-hover:translate-x-1" />
         </a>
       </div>
     </div>

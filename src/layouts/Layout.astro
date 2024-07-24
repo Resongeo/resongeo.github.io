@@ -1,0 +1,137 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+		<script>
+			const options = {
+				root: null,
+				rootMargin: '0px',
+				threshold: 0.0,
+			}
+
+			const observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+					entry.target.classList.add('transition-reset')
+					observer.unobserve(entry.target)
+					}
+				})
+			}, options)
+
+			Array.from(['.transition-float-up', '.transition-float-left', '.transition-float-right']).forEach((className) => {
+				document.querySelectorAll(className).forEach((element) => {
+					observer.observe(element)
+				})
+			})
+		</script>
+	</body>
+</html>
+
+<style lang="scss" is:global>
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  @apply bg-default-bg;
+
+  box-sizing: border-box;
+
+  user-select: none;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  background-color: #191c1c;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lighten(#121212, 10%);
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.button {
+  border: 1px solid rgba(160, 160, 160, 0.3);
+  z-index: 2;
+
+  @apply flex items-center justify-between text-base sm:text-lg font-medium py-[0.65rem] pl-5 pr-3 rounded-lg transition-colors shadow-md;
+
+  span {
+    @apply transition-transform;
+  }
+}
+
+.radial-glow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(61, 171, 171, 0.14) 0%,
+    rgba(61, 171, 138, 0) 100%
+  );
+  z-index: -1;
+}
+
+@mixin transition-fade {
+  opacity: 0;
+  transition-property: opacity transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.4s;
+}
+
+.transition-float-up {
+  @include transition-fade;
+  transform: translateY(20%);
+}
+
+.transition-float-left {
+  @include transition-fade;
+  transform: translateX(5%);
+}
+
+.transition-float-right {
+  @include transition-fade;
+  transform: translateX(-5%);
+}
+
+.transition-reset {
+  opacity: 1;
+  transform: translateY(0%);
+  transform: translateX(0%);
+}
+</style>

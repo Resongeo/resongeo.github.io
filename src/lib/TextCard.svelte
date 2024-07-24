@@ -6,9 +6,11 @@
 
 <div class="p-3 xl:w-[500px]">
   <div class="flex items-center mb-2">
-    <span class="material-symbols-outlined text-primary text-5xl">
-      {icon}
-    </span>
+    { #if icon == 'school' }
+      <span class="icon-[material-symbols--school-outline-rounded] text-primary text-5xl" />
+    {:else if icon == 'gamepad'}
+      <span class="icon-[material-symbols--stadia-controller-outline] text-primary text-5xl" />
+    {/if }
     <h1 class="text-3xl font-bold ml-4 tracking-wide text-title">
       {title}
     </h1>
