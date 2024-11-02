@@ -122,7 +122,7 @@
     <div class="hidden xl:grid place-items-center">
       <img
         class="w-[500px] absolute z-20"
-        src="images/placeholder.png"
+        src="images/placeholder.webp"
         alt="dude is programming"
       />
       <div class="radial-glow z-10 w-[900px] h-[900px] absolute"></div>

@@ -15,7 +15,7 @@
       <div class="hidden lg:grid place-items-center 2xl:mr-12">
         <img
           class="observable w-[300px] absolute z-20"
-          src="images/placeholder.png"
+          src="images/placeholder.webp"
           alt="dude is programming"
         />
         <div
@@ -40,7 +40,7 @@
       <div class="hidden lg:grid place-items-center 2xl:ml-12">
         <img
           class="observable w-[300px] absolute z-20"
-          src="images/placeholder.png"
+          src="images/placeholder.webp"
           alt="dude is programming"
         />
         <div
