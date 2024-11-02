@@ -19,7 +19,7 @@
     <div class="w-48">
       <h1 class="font-light text-neutral-500 text-xl mb-3">Created with</h1>
       <ul class="text-default-text pl-2">
-        <li><a href="https://vitejs.dev/" target="_blank">Vite</a></li>
+        <li><a href="https://astro.build/" target="_blank">Astro</a></li>
         <li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
         <li>
           <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>

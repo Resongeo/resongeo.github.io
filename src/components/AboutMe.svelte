@@ -35,7 +35,7 @@
       <TextCard
         icon="gamepad"
         title="What I like to do"
-        content="In my free time, I like to work on personal projects. It's my hobby to learn new skills and technologies. And also I like to go out with friends, play pool, bowling, darts. And of course as a nerd, I play videogames."
+        content="In my free time, I like to work on personal projects. It's my hobby to learn new skills and technologies. And also I like to go out with friends, play pool, bowling, darts or just take a walk."
       />
       <div class="hidden lg:grid place-items-center 2xl:ml-12">
         <img

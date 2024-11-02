@@ -27,7 +27,7 @@
     class="hidden absolute items-center justify-center w-screen h-screen z-10 bg-black bg-opacity-25 backdrop-blur-md"
   >
     <span
-      class="icon-[material-symbols--close-rounded] text-2xl absolute top-0 right-0 text-4xl m-6 cursor-pointer"
+      class="icon-[material-symbols--close-rounded] absolute top-0 right-0 text-4xl m-6 cursor-pointer"
       on:click={toggleFullscreenMenu} />
 
     <ul class="text-center">
@@ -92,7 +92,7 @@
 
       <p class="mt-6 text-default-text text-lg font-medium text-justify">
         Soulful developer with a love for learning new technologies, and
-        creating applications
+        creating web and desktop applications
       </p>
 
       <div class="year-cards mx-2">
