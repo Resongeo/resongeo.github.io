@@ -112,7 +112,7 @@
           About me
           <span class="icon-[iconamoon--arrow-right-2] text-xl ml-3 group-hover:translate-x-1" />
         </a>
-        <a href="files/resume_en.pdf" download class="button group bg-secondary hover:bg-secondary-hover">
+        <a href="files/cv_en.pdf" download class="button group bg-secondary hover:bg-secondary-hover">
           Download CV
           <span class="icon-[iconamoon--arrow-right-2] text-xl ml-3 group-hover:translate-x-1" />
         </a>
