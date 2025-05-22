@@ -15,7 +15,7 @@
     <p class="text-default-text my-3 md:text-lg">{description}</p>
 
     <a
-      class="flex w-fit border border-default-text rounded-lg py-1 px-2"
+      class="flex w-fit border border-default-text rounded-lg py-1 px-2 hover:bg-neutral-700 transition-colors"
       href={github}
       target="_blank"
     >
@@ -25,7 +25,7 @@
     <div class="my-4 flex flex-wrap">
       {#each tags as tag}
         <span
-          class="border border-primary rounded-full px-2 mr-3 text-sm bg-primary bg-opacity-10"
+          class="border border-primary rounded-full px-2 mr-3 text-sm bg-primary bg-opacity-10 hover:bg-opacity-50 transition-colors"
           >{tag}</span
         >
       {/each}
